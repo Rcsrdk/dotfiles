@@ -1,0 +1,67 @@
+html {
+    /* Gruvbox Light Theme */
+    --theme-my-bubble-color: #d79921; /* yellow */
+    --theme-accent-color: #b16286; /* purple */
+    --theme-their-bubble-color: #ebdbb2; /* light beige */
+    --theme-chat-background-color: #fbf1c7; /* light background */
+    --theme-chat-background-image: none; /* Removed background image */
+
+    --theme-borderwidth: 0;
+    --theme-borderradius: 13px;
+    --theme-bubble-padding-v: 8px;
+    --theme-bubble-padding-h: 12px;
+
+    --chatview__backgroundcolor: var(--theme-chat-background-color);
+    --chatview__backgroundimage: none; /* Removed background image */
+
+    --chatview__fontsize: 2.2rem;
+    --chatview__lineheight: var(--chatview__fontsize);
+    --chatview__paddingleft: var(--size-spacing-400);
+    --chatview__paddingright: var(--size-spacing-400);
+
+    --chatview__composer__borderradius: var(--theme-borderradius);
+    --chatview__composer__backgroundcolor: #ebdbb2; /* light beige */
+
+    --chatview__message_group__margintop: 12px;
+
+    --chatview__message_tail__opacity: 1;
+    --chatview__message_tail__color: var(--theme-their-bubble-color);
+    --chatview__message__backgroundcolor: var(--theme-their-bubble-color);
+    --chatview__message__fontcolor: #3c3836; /* dark text */
+
+    --chatview__message__paddingleft: var(--theme-bubble-padding-h);
+    --chatview__message__paddingright: var(--theme-bubble-padding-h);
+    --chatview__message__paddingtop: var(--theme-bubble-padding-v);
+    --chatview__message__paddingbottom: var(--theme-bubble-padding-v);
+    --chatview__message__marginleft: 4px;
+    --chatview__message__marginright: 4px;
+    --chatview__message__margintop: 4px;
+
+    --chatview__message__borderradius: var(--theme-borderradius);
+    --chatview__message_sharp__borderradius: var(--theme-borderradius);
+
+    --chatview__message_sender_name__alpha: 1;
+    --chatview__message_sender_name__lightness: 35%;
+
+    --chatview__message_self__backgroundcolor: var(--theme-my-bubble-color);
+    --chatview__readmarker__fontcolor: var(--theme-accent-color);
+
+    --menu__backgroundcolor: #ebdbb2; /* light menu background */
+    --menu__fontcolor: #3c3836; /* dark text for menus */
+    --menu__bordercolor: #d5c4a1; /* light border color */
+}
+
+html[theme="dark"] {
+    /* Gruvbox Dark Theme */
+    --theme-their-bubble-color: #3c3836; /* dark gray */
+    --theme-chat-background-color: #282828; /* dark background */
+    --theme-chat-background-image: none; /* Removed background image */
+
+    --chatview__composer__backgroundcolor: #3c3836; /* dark gray */
+    --chatview__message__fontcolor: #ebdbb2; /* light text */
+    --chatview__message_sender_name__lightness: 65%;
+
+    --menu__backgroundcolor: #3c3836; /* dark menu background */
+    --menu__fontcolor: #ebdbb2; /* light text for menus */
+    --menu__bordercolor: #665c54; /* subtle border color */
+}
