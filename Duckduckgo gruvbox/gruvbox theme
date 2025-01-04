@@ -1,0 +1,30 @@
+// Cookies string for your theme
+const cookie = '7=282828; j=282828; 9=fe8019; aa=f9bc2e; 8=fbf1c7; x=b7ba25; 21=3b3735;';
+
+// Converts cookie string into formatted JSON
+const cookieToJSON = (cookieRaw) => {
+  const cookieJson = {};
+  const items = cookieRaw.split(/[ ,]+/);
+
+  items.forEach((item) => {
+    const parts = item.split('=');
+    cookieJson[parts[0]] = parts[1];
+  });
+
+  return cookieJson;
+};
+
+// Iterates over JSON, and adds to browser cookie store
+const setCookies = (cookieJson) => {
+  Object.keys(cookieJson).forEach((key) => {
+    document.cookie = `${key}=${cookieJson[key]}`;
+  });
+};
+
+alert('The Gruvbox Dark theme will be applied.');
+
+// Call set cookies, passing in formated cookie data
+setCookies(cookieToJSON(cookie));
+
+// All done, reload page for changes to take effect :)
+location.reload();
